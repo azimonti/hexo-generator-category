@@ -18,10 +18,16 @@ $ npm install hexo-generator-category --save
 category_generator:
   per_page: 10
   order_by: -date
+  explicit_paging: false
+  overwrite_latest: false
+  verbose: false
 ```
 
 - **per_page**: Posts displayed per page. (0 = disable pagination)
 - **order_by**: Posts order. (Order by date descending by default)
+- **explicit_paging**: Explicit paging. (Number the first page. e.g. `page/1/index.html`)
+- **overwrite_latest**: Set the latest page. (`latest/index.html` in place of `page/N/index.html`)
+- **verbose**: verbose output. (Output all generated routes)
 
 ## License
 
